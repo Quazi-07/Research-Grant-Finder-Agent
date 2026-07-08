@@ -1,0 +1,14 @@
+[project]
+name = "nih-grant-matcher"
+version = "0.1.0"
+description = "Find NIH/HHS grant opportunities relevant to ML and data analysis expertise."
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "streamlit>=1.36",
+  "pandas>=2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
