@@ -1,6 +1,6 @@
-# NIH Grant AI Agent
+# Research Grant Finder Agent
 
-### An Agentic AI Research Software System for Autonomous Funding Discovery, Computational Relevance Analysis, and NIH Opportunity Prioritization
+### An agentic AI tool for searching, screening, and ranking NIH funding opportunities based on research interests and proposal relevance.
 
 <p align="center">
   <b>Discover. Analyze. Rank. Review. Act.</b>
@@ -27,11 +27,11 @@
 
 Researchers often spend hours manually searching funding databases, reviewing long opportunity announcements, and deciding whether a funding opportunity aligns with their expertise.
 
-The **NIH Grant AI Agent** explores a different approach.
+The **Research Grant Finder Agent** explores a different approach.
 
 Instead of treating funding discovery as a simple keyword search problem, the software organizes the process as an **agent-oriented research workflow**.
 
-Specialized software agents collect funding records, normalize heterogeneous information, evaluate computational relevance, retrieve research context, prioritize opportunities, preserve results, and support researcher review.
+Specialized AI agents collect funding records, normalize heterogeneous information, evaluate computational relevance, retrieve research context, prioritize opportunities, preserve results, and support researcher review.
 
 The objective is simple:
 
