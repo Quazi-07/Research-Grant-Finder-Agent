@@ -39,6 +39,18 @@ The objective is simple:
 
 ---
 
+## Current Dashboard
+
+<p align="center">
+  <img src="images/Dashboard.png" alt="Research Grant Finder Agent Dashboard" width="900">
+</p>
+
+<p align="center">
+  <i>Interactive dashboard for searching, screening, and ranking NIH funding opportunities.</i>
+</p>
+
+---
+
 ## Why This Tool?
 
 Finding the right NIH funding opportunity is not always easy.
