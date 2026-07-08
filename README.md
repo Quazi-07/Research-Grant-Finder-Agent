@@ -29,9 +29,9 @@ Researchers often spend hours manually searching funding databases, reviewing lo
 
 The **Research Grant Finder Agent** explores a different approach.
 
-Instead of treating funding discovery as a simple keyword search problem, the software organizes the process as an **agent-oriented research workflow**.
+Instead of treating funding discovery as a simple keyword search problem, this AI tool organizes the process as an **agent-oriented research workflow**.
 
-Specialized AI agents collect funding records, normalize heterogeneous information, evaluate computational relevance, retrieve research context, prioritize opportunities, preserve results, and support researcher review.
+It searches public funding sources, collects available opportunities, analyzes their content, and ranks them based on research and computational relevance. The goal is to help researchers quickly identify opportunities that may be worth exploring further.
 
 The objective is simple:
 
@@ -39,19 +39,42 @@ The objective is simple:
 
 ---
 
-## 🤖 Agentic Research Workflow
+## Why This Tool?
 
-The system separates major grant intelligence tasks into specialized software agents.
+Finding the right NIH funding opportunity is not always easy.
+
+A researcher interested in data science, or computational health research may search for those exact terms. However, a relevant funding announcement may use different language, such as:
+
+- Predictive modeling
+- Clinical prediction
+- Multimodal data
+- Bioinformatics
+- Omics
+- Medical imaging
+- Statistical modeling
+- Data integration
+
+A simple keyword search may miss these opportunities.
+
+The **Research Grant Finder Agent** provides an intelligent first review of available funding opportunities. It searches official funding sources, screens opportunity descriptions, and ranks potentially relevant grants for researcher review.
+
+The tool is designed to answer a simple question:
+
+> **Which funding opportunities should I look at first?**
+
+## How Does It Work?
+
+The system separates major grant intelligence tasks into specialized AI agents.
 
 | Agent                             | Responsibility                                                         |
 | --------------------------------- | ---------------------------------------------------------------------- |
-| 🔎 **NIH Guide Ingestion Agent**  | Discovers and normalizes NIH Guide funding announcements               |
-| 🌐 **Grants.gov Ingestion Agent** | Searches and enriches federal opportunity records                      |
-| 🧩 **Grant Parser Agent**         | Converts heterogeneous funding records into a common opportunity model |
-| 🧠 **ML Relevance Agent**         | Evaluates computational and data-science relevance                     |
-| 🔬 **NIH Context Agent**          | Retrieves related funded-project context from NIH RePORTER             |
-| 📊 **Digest Agent**               | Produces prioritized funding intelligence reports                      |
-| 👤 **Review Feedback Agent**      | Captures researcher feedback for future relevance tuning               |
+| **NIH Guide Ingestion Agent**  | Discovers and normalizes NIH Guide funding announcements               |
+| **Grants.gov Ingestion Agent** | Searches and enriches federal opportunity records                      |
+| **Grant Parser Agent**         | Converts heterogeneous funding records into a common opportunity model |
+| **ML Relevance Agent**         | Evaluates computational and data-science relevance                     |
+| **NIH Context Agent**          | Retrieves related funded-project context from NIH RePORTER             |
+| **Digest Agent**               | Produces prioritized funding intelligence reports                      |
+| **Review Feedback Agent**      | Captures researcher feedback for future relevance tuning               |
 
 These agents support a coordinated workflow for funding discovery and prioritization.
 
@@ -106,18 +129,18 @@ These agents support a coordinated workflow for funding discovery and prioritiza
           ┌───────────────┼────────────────┐
           │               │                │
           ▼               ▼                ▼
-     📊 DASHBOARD     📗 EXCEL        📄 DIGEST
+      DASHBOARD         EXCEL           DIGEST
                           │
                           ▼
-                  👤 RESEARCHER REVIEW
+                  RESEARCHER REVIEW
                           │
                           ▼
-                  🔁 FEEDBACK AGENT
+                  FEEDBACK AGENT
 ```
 
 ---
 
-## 🧠 How the Intelligence Engine Thinks
+## How the Intelligence Engine Thinks?
 
 The system does not rely on a single keyword.
 
@@ -171,7 +194,7 @@ The intelligence engine applies penalties when biomedical language is broad but 
 
 ---
 
-## 🎯 Opportunity Intelligence Classification
+## Opportunity Intelligence Classification
 
 Each opportunity receives a relevance score from **0–100**.
 
@@ -185,21 +208,21 @@ The score is designed to **prioritize expert review—not replace scientific jud
 
 ---
 
-## 📊 Research Intelligence Dashboard
+## Research Intelligence Dashboard
 
 The Streamlit interface provides an interactive environment for grant opportunity analysis.
 
 Researchers can:
 
-* 🔍 Search NIH Guide and Grants.gov
-* 🎯 Filter by relevance classification
-* 🏛️ Filter by NIH institute
-* 🧠 Search within computational signals
-* 📈 Review relevance score distributions
-* 📅 Monitor upcoming deadlines
-* 🔬 Inspect why an opportunity matched
-* 🔗 Open official NIH Guide and Grants.gov records
-* 📗 Export selected opportunities to Excel
+* Search NIH Guide and Grants.gov
+* Filter by relevance classification
+* Filter by NIH institute
+* Search within computational signals
+* Review relevance score distributions
+* Monitor upcoming deadlines
+* Inspect why an opportunity matched
+* Open official NIH Guide and Grants.gov records
+* Export selected opportunities to Excel
 
 ### Dashboard Intelligence Metrics
 
@@ -212,11 +235,11 @@ The dashboard automatically displays:
 
 ---
 
-## 🔍 Explainable Opportunity Matching
+## Explainable Opportunity Matching
 
 A major design principle of the system is **transparent prioritization**.
 
-For each opportunity, the software preserves:
+For each opportunity, this tool  preserves:
 
 * Relevance score
 * Priority classification
@@ -233,7 +256,7 @@ Researchers can inspect **why an opportunity was prioritized** before deciding w
 
 ---
 
-## 🧬 NIH RePORTER Research Context
+## NIH RePORTER Research Context
 
 The architecture includes an **NIH Context Agent** designed to retrieve related funded projects from NIH RePORTER.
 
@@ -247,7 +270,7 @@ This capability creates a foundation for future research intelligence tasks such
 
 ---
 
-## 🔁 Human-in-the-Loop Research Intelligence
+## Human-in-the-Loop Research Intelligence
 
 The system includes a **Review Feedback Agent** that records researcher assessments of opportunities.
 
@@ -275,21 +298,21 @@ The long-term objective is a **human-AI collaborative grant discovery environmen
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Technology            | Role                                        |
 | --------------------- | ------------------------------------------- |
-| 🐍 Python             | Agent and workflow development              |
-| 🐼 Pandas             | Data processing and analytics               |
-| 📊 Streamlit          | Interactive research intelligence interface |
-| 🗄️ SQLite            | Persistent opportunity intelligence store   |
-| 🔌 REST APIs          | Funding and research data integration       |
-| 📗 Excel              | Research collaboration and export           |
-| 🧠 Similarity Scoring | Computational relevance analysis            |
+|    Python             | Agent and workflow development              |
+|    Pandas             | Data processing and analytics               |
+|    Streamlit          | Interactive research intelligence interface |
+|     SQLite            | Persistent opportunity intelligence store   |
+|    REST APIs          | Funding and research data integration       |
+|    Excel              | Research collaboration and export           |
+|    Similarity Scoring | Computational relevance analysis            |
 
 ---
 
-## 📂 Current Software Capabilities
+## Current Capabilities
 
 The research prototype currently supports:
 
@@ -312,13 +335,13 @@ The research prototype currently supports:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Quazi-07/nih-grant-opportunity-matcher.git
-cd nih-grant-opportunity-matcher/"NIH Extractor"
+git clone https://github.com/Quazi-07/Research-Grant-Finder-Agent.git
+cd Research-Grant-Finder-Agent/"NIH Extractor"
 ```
 
 ### 2. Create a Virtual Environment
@@ -357,7 +380,7 @@ The dashboard will open in your browser.
 
 ---
 
-## 🧪 Research Software Status
+## Research Software Status
 
 > **Current Stage: Functional Research Prototype**
 
@@ -372,59 +395,9 @@ It does **not currently rely on a Large Language Model for autonomous scientific
 This distinction is intentional and provides a transparent baseline for evaluating future LLM-based agents.
 
 ---
+## Long-Term Vision
 
-## 🗺️ Roadmap: Toward Autonomous Research Funding Intelligence
-
-### Phase I — Funding Intelligence Foundation ✅
-
-* [x] NIH Guide ingestion
-* [x] Grants.gov ingestion
-* [x] Opportunity normalization
-* [x] Relevance scoring
-* [x] Opportunity prioritization
-* [x] SQLite persistence
-* [x] Interactive dashboard
-
-### Phase II — Research Context Intelligence 🚧
-
-* [x] NIH RePORTER client architecture
-* [ ] Funded-project similarity analysis
-* [ ] Institute-level funding trend analysis
-* [ ] Research topic clustering
-* [ ] Funding-gap identification
-
-### Phase III — Generative AI Agents 🔮
-
-* [ ] LLM Grant Summary Agent
-* [ ] Researcher Expertise Extraction Agent
-* [ ] CV-to-NOFO Matching Agent
-* [ ] Scientific Fit Explanation Agent
-* [ ] Eligibility Review Agent
-* [ ] Collaboration Recommendation Agent
-
-### Phase IV — Agentic Funding Surveillance 🔮
-
-* [ ] Autonomous scheduled opportunity monitoring
-* [ ] New-NOFO detection
-* [ ] Opportunity change tracking
-* [ ] Deadline monitoring
-* [ ] Personalized email intelligence digests
-* [ ] Agent memory for researcher preferences
-* [ ] Human-feedback-driven ranking adaptation
-
-### Phase V — Research Collaboration Intelligence 🔮
-
-* [ ] Researcher network discovery
-* [ ] Expertise-gap analysis
-* [ ] Potential Co-I recommendation
-* [ ] Multi-investigator team formation support
-* [ ] Institution-level research intelligence
-
----
-
-## 🔮 Long-Term Vision
-
-The long-term vision is to evolve the NIH Grant Intelligence Agent into an **Agentic Research Funding Intelligence Platform**.
+The long-term vision is to evolve the Research Grant Finder Agent into an **Agentic Research Grant Finding Intelligence Platform**.
 
 A future research team could provide:
 
@@ -451,7 +424,7 @@ Autonomous research agents could then:
 
 ---
 
-## ⚠️ Responsible Use and Disclaimer
+## Responsible Use and Disclaimer
 
 This project is not affiliated with or endorsed by the National Institutes of Health, Grants.gov, or the U.S. Department of Health and Human Services.
 
@@ -472,28 +445,12 @@ using the official funding opportunity announcement.
 
 ---
 
-## 👨‍💻 Researcher & Developer
+## Idea & Developed by
 
-**Md. Saifur Rahman, Ph.D.**
-
-**Research Areas:**
-Artificial Intelligence • Machine Learning • Data Science • Health Analytics • Generative AI • Agentic AI
-
-This project explores the intersection of **AI, data science, research informatics, and agentic software engineering** for improving research funding intelligence.
+**Md. Saifur Rahman**
 
 ---
 
-## 🤝 Collaboration
-
-Research collaborations are welcome in:
-
-* Agentic AI for research
-* Generative AI and LLM applications
-* Biomedical and public health informatics
-* Research funding intelligence
-* AI-assisted grant development
-* Human-AI collaborative research systems
-
-⭐ **If this research software is useful to you, consider starring the repository.**
+⭐ **If this research tool is useful to you, consider starring the repository.**
 
 💡 **Ideas, issues, and research collaborations are welcome.**
